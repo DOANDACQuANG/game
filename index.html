@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Force Vanguard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        
+        <div id="hud" class="hidden">
+            <div id="top-left">
+                <div id="health-container">
+                    <!-- Hearts will be injected here via JS -->
+                </div>
+            </div>
+
+            <div id="top-center">
+                <div id="score-val">00000000</div>
+                <div id="score-label">EXCELLENT</div>
+            </div>
+
+            <div id="top-right">
+                <div id="power-container">
+                    PWR: <span id="powerLevel">1</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="start-screen" class="overlay">
+            <div class="overlay-content">
+                <h1>SKY VANGUARD</h1>
+                <p>Move with Mouse/Touch | Auto-fire</p>
+                <button id="start-btn">DEPLOY</button>
+            </div>
+        </div>
+
+        <div id="game-over-screen" class="overlay hidden">
+            <div class="overlay-content">
+                <h1>MISSION FAILED</h1>
+                <p>Final Score: <span id="final-score">0</span></p>
+                <button id="restart-btn">Try Again</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
