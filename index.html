@@ -1,52 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sky Force Vanguard</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudentKyungMin - Tin Tức Game</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+}
+
+header{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+    background:#333;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+button{
+    padding:10px 15px;
+    border:none;
+    background:#007bff;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+</style>
 </head>
+
 <body>
-    <div id="game-container">
-        <canvas id="gameCanvas"></canvas>
-        
-        <div id="hud" class="hidden">
-            <div id="top-left">
-                <div id="health-container">
-                    <!-- Hearts will be injected here via JS -->
-                </div>
-            </div>
 
-            <div id="top-center">
-                <div id="score-val">00000000</div>
-                <div id="score-label">EXCELLENT</div>
-            </div>
+<header>
+    <h1>🎮 StudentKyungMin</h1>
+    <p>Tin tức game mới nhất</p>
+</header>
 
-            <div id="top-right">
-                <div id="power-container">
-                    PWR: <span id="powerLevel">1</span>
-                </div>
-            </div>
-        </div>
+<nav>
+    <a href="#">Trang Chủ</a>
+    <a href="#">Tin Tức</a>
+    <a href="#">Liên Hệ</a>
+</nav>
 
-        <div id="start-screen" class="overlay">
-            <div class="overlay-content">
-                <h1>SKY VANGUARD</h1>
-                <p>Move with Mouse/Touch | Auto-fire</p>
-                <button id="start-btn">DEPLOY</button>
-            </div>
-        </div>
+<div class="container">
 
-        <div id="game-over-screen" class="overlay hidden">
-            <div class="overlay-content">
-                <h1>MISSION FAILED</h1>
-                <p>Final Score: <span id="final-score">0</span></p>
-                <button id="restart-btn">Try Again</button>
-            </div>
-        </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1000">
+        <h2>GTA 6 Chính Thức Ra Mắt</h2>
+        <p>Rockstar Games công bố trailer mới của GTA 6.</p>
+        <button onclick="window.open('https://www.rockstargames.com')">
+            Xem thêm
+        </button>
     </div>
-    
-    <script src="script.js"></script>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1000">
+        <h2>LMHT Mùa Giải Mới</h2>
+        <p>Nhiều thay đổi lớn trong bản cập nhật mới nhất.</p>
+        <button onclick="window.open('https://www.leagueoflegends.com')">
+            Xem thêm
+        </button>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 StudentKyungMin
+</footer>
+
 </body>
 </html>
