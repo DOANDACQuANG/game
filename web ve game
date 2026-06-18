@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Kyungmin - Game News</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+        header{
+            background:#1e1e1e;
+            color:white;
+            text-align:center;
+            padding:30px;
+        }
+
+        nav{
+            background:#333;
+            padding:15px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:orange;
+        }
+
+        .container{
+            width:80%;
+            margin:20px auto;
+        }
+
+        .card{
+            background:white;
+            margin-bottom:20px;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .card h2{
+            color:#333;
+            margin-bottom:10px;
+        }
+
+        .card p{
+            line-height:1.6;
+        }
+
+        .links a{
+            display:block;
+            margin:10px 0;
+            color:blue;
+        }
+
+        footer{
+            background:#1e1e1e;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🎮 Student Kyungmin Game News</h1>
+    <p>Cập nhật tin tức game mới nhất mỗi ngày</p>
+</header>
+
+<nav>
+    <a href="#news">Tin Tức</a>
+    <a href="#links">Liên Kết</a>
+    <a href="#about">Giới Thiệu</a>
+</nav>
+
+<div class="container">
+
+    <section id="news">
+        <div class="card">
+            <h2>🔥 GTA VI chuẩn bị ra mắt</h2>
+            <p>
+                Rockstar Games tiếp tục công bố những hình ảnh và thông tin
+                mới nhất về GTA VI, tựa game được mong chờ nhất hiện nay.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>⚔️ Liên Minh Huyền Thoại cập nhật mùa giải mới</h2>
+            <p>
+                Riot Games mang đến nhiều thay đổi về tướng, trang bị và chế độ chơi.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>⛏️ Minecraft có bản cập nhật mới</h2>
+            <p>
+                Nhiều sinh vật và công trình mới đã được thêm vào trò chơi.
+            </p>
+        </div>
+    </section>
+
+    <section id="links">
+        <div class="card links">
+            <h2>🌐 Website Game Nổi Tiếng</h2>
+
+            <a href="https://www.ign.com" target="_blank">
+                IGN - Tin tức game quốc tế
+            </a>
+
+            <a href="https://www.gamespot.com" target="_blank">
+                GameSpot
+            </a>
+
+            <a href="https://www.pcgamer.com" target="_blank">
+                PC Gamer
+            </a>
+
+            <a href="https://www.riotgames.com" target="_blank">
+                Riot Games
+            </a>
+
+            <a href="https://www.minecraft.net" target="_blank">
+                Minecraft Official
+            </a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="card">
+            <h2>📖 Giới Thiệu</h2>
+            <p>
+                Student Kyungmin Game News là website chia sẻ tin tức,
+                đánh giá và cập nhật những thông tin mới nhất về thế giới game.
+                Dự án được xây dựng phục vụ môn học phát triển dịch vụ web.
+            </p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 Student Kyungmin Game News</p>
+</footer>
+
+</body>
+</html>
